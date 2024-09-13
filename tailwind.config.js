@@ -7,10 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backgroundImage: {
+        'hero-bg': "url('/images/bg1.jpeg')",
       },
+      fontFamily: {
+        dosis: ['Dosis', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
+      },
+      fontWeight: {
+        normal: 400,
+        light: 100,
+        bold: 700,
+        extraBold: 900,
+      }
     },
   },
   plugins: [],
