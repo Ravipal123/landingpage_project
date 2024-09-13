@@ -20,7 +20,7 @@ const features = [
         imgSrc: '/images/suport.jpg',
         title: 'Support',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun Lorem ipsum dolor sit amet. consectetur',
-    },
+    },  
     {
         imgSrc: '/images/innovation.jpg',
         title: 'Innovation',
