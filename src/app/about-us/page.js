@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function About() {
     return (
-        <div className='bg-slate-100'>
+        <div className="bg-slate-100">
             <div className="container mx-auto p-4 sm:p-6">
                 {/* About Section */}
                 <section className="text-center mb-8 sm:mb-12">
@@ -27,7 +27,7 @@ export default function About() {
                         <h3 className="text-xl sm:text-2xl text-gray-600 font-dosis font-medium mb-2">
                             We Are Increasing <span className='font-bold text-blue-700'>Business</span> Success With <span className='font-bold text-blue-700'>Technology</span>
                         </h3>
-                        <p className='text-sm sm:text-base mb-2 text-gray-600'>
+                        <p className="text-sm sm:text-base mb-2 text-gray-600">
                             At Imeleo, we use technology to help businesses grow, work smarter, and get better results. Our goal is to make it easier for companies to succeed in today's digital world.
                         </p>
                         <ul className="mb-3 text-gray-600">
@@ -42,7 +42,7 @@ export default function About() {
                 {/* Founder Section */}
                 <section className="text-center md:text-left p-4 sm:p-6 rounded-lg">
                     <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-10 ">
-                        <div className='w-full md:w-1/2  text-gray-600 '>
+                        <div className="w-full md:w-1/2  text-gray-600 ">
                             <h3 className="text-2xl sm:text-3xl font-medium mb-4">
                               <i class="fa-solid fa-star text-medium text-blue-700"></i>
                                 Meet Our <span className='font-dosis text-blue-700'>Founder</span>
@@ -62,8 +62,8 @@ export default function About() {
                                 height={350} 
                                 className="rounded-xl max-w-full mb-2" 
                             />
-                            <p className='text-2xl sm:text-lg text-blue-700 font-dosis font-semibold'>Mayank Mahajan <i class="fa-brands fa-linkedin"></i></p>
-                            <p className='text-sm sm:text-sm text-gray-600'>Founder, Imeleo</p>
+                            <p className="text-2xl sm:text-lg text-blue-700 font-dosis font-semibold">Mayank Mahajan <i class="fa-brands fa-linkedin"></i></p>
+                            <p className="text-sm sm:text-sm text-gray-600">Founder, Imeleo</p>
                         </div>
                     </div>
                 </section>
