@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const services = [
     {
@@ -43,10 +44,12 @@ export default function Services() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <div key={index} className="bg-white rounded-xl border border-r-1 p-4">
-                            <img 
+                            <Image 
                                 src={service.imgSrc} 
                                 alt={service.title} 
-                                className="w-12 h-12 rounded-full top-4 left-4 border-2 border-slate-100"
+                                width={48} 
+                                height={48} 
+                                className="rounded-full border-2 border-slate-100"
                             />
                             <h3 className="text-xl text-blue-500 font-medium mb-2">{service.title}</h3>
                             <p className="text-gray-600 text-sm">{service.description}</p>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const solutions = [
     {
@@ -42,7 +43,13 @@ export default function Solutions() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {solutions.map((solution, index) => (
                     <div key={index} className="bg-slate-100 rounded-xl border border-r-1 p-4">
-                        <img src={solution.imgSrc} alt={solution.title} className="w-full rounded-lg mb-4"/>
+                        <Image 
+                            src={solution.imgSrc} 
+                            alt={solution.title} 
+                            width={600} 
+                            height={400} 
+                            className="w-full rounded-lg mb-4"
+                        />
                         <h3 className="text-xl text-blue-500 font-medium mb-2">{solution.title}</h3>
                         <p className="text-gray-600">{solution.description}</p>
                     </div>

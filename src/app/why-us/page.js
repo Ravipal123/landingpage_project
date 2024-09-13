@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const features = [
     {
@@ -20,7 +21,7 @@ const features = [
         imgSrc: '/images/suport.jpg',
         title: 'Support',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun Lorem ipsum dolor sit amet. consectetur',
-    },  
+    },
     {
         imgSrc: '/images/innovation.jpg',
         title: 'Innovation',
@@ -42,10 +43,12 @@ export default function WhyUs() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {features.map((feature, index) => (
                     <div key={index} className="bg-white rounded-xl border border-r-1 p-4">
-                        <img 
+                        <Image 
                             src={feature.imgSrc} 
                             alt={feature.title} 
-                            className="w-12 h-12 rounded-full top-4 left-4 border-2 border-slate-100"
+                            width={48} 
+                            height={48} 
+                            className="w-12 h-12 rounded-full border-2 border-slate-100"
                         />
                         <h3 className="text-xl text-blue-700 font-medium mb-2">{feature.title}</h3>
                         <p className="text-gray-600 text-sm">{feature.description}</p>
